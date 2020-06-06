@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Details</title>
+    <link rel="stylesheet" href="../static/css/insurance.css">
+</head>
+
+<div class="insurance_topnav">
+    <a href=#home>ABC Corp</a>
+    <a href={{ url_for('insurance_premium_cal') }}>Premimum Calculator</a>
+    <a href="#claims">Claims</a>
+    <a href="#claims">Renewals</a>
+    <a href="#support">Support</a>
+
+</div>
+
+<body>
+    <h3>Premium calculator</h3>
+    The values is: {{predicted_premium}}
+</body>
+</html>

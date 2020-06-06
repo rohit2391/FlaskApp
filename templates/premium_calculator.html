@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcuclate Your Premium</title>
+    <link rel="stylesheet" href="../static/css/insurance.css">
+</head>
+
+<div class="insurance_topnav">
+    <a class="#home">Insurance Helper</a>
+    <a href="#premium">Premimum Calculator</a>
+    <a href="#claims">Claims</a>
+    <a href="#claims">Renewals</a>
+    <a href="#support">Support</a>
+</div>
+
+{#const =1#}
+{#    age=10#}
+{#    sex=0#}
+{#    bmi=27#}
+{#    children = 2#}
+{#    smoker =1#}
+{#    region =3#}
+{#    insuranceclaim=1#}
+
+<body>
+    <h3>Calcuclate Your Premium</h3>
+    <form action="{{ url_for('PremiumResult') }}"><br>
+        <label for="const">Enter the constant Value :  </label>
+        <input type="number" id="const" name="const"><br><br>
+
+        <label for="age">Enter the Age :  </label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="sex">Enter the Gender in numeric O for M and 1 for F  :  </label>
+        <input type="number" id="sex" name="sex"><br><br>
+
+        <label for="bmi">Enter the BMI Value :  </label>
+        <input type="number" id="bmi" name="bmi"><br><br>
+
+        <label for="children">Enter the number of Children :  </label>
+        <input type="number" id="children" name="children"><br><br>
+
+        <label for="smoker">Enter Smoker val 0 for Y and 1 for N :  </label>
+        <input type="number" id="smoker" name="smoker"><br><br>
+
+        <label for="region">Enter the Region Value b/w (1,2,3,4) :  </label>
+        <input type="number" id="region" name="region"><br><br>
+
+        <label for="insuranceclaim">Enter the Number of Insurance claimed earlier :  </label>
+        <input type="number" id="insuranceclaim" name="insuranceclaim"><br><br>
+
+
+        <button type=”submit”> Submit </button><br>
+    </form>
+</body>
+</html>
